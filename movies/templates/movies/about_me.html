@@ -1,0 +1,15 @@
+{% extends "movies/_base.html" %}
+
+<html>
+    <body> 
+        
+        {% block content %} 
+        <br>
+             I like action movies! 
+             <br>
+            {% load static %}
+            <img src="{% static "movies/shrek.jpg" %}"  alt="About Me Picture">
+        {% endblock %}
+
+    </body>
+</html>

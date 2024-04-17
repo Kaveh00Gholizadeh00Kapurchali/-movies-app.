@@ -1,0 +1,27 @@
+<html>
+    <head> <title>{% block title %} my amazing title {% endblock  %}</title> </head>
+<body>
+    <div id="hrefs">
+    {% block hrefs %}
+        <a href={% url "home" %} target="_blank"> Home </a> 
+        <br>
+        <a href={% url "about" %} target="_blank"> about me </a>
+        <br>
+    {% endblock hrefs %}
+    
+    </div>
+
+
+
+    <div id="content">
+
+        {% block content %}  {% endblock  %}    
+
+    </div>
+
+</body>
+
+
+
+
+</html>
